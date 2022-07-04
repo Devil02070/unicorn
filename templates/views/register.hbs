@@ -1,0 +1,32 @@
+{{>header}}
+<section class="reg-sec d-flex align-items-center">
+    <div class="container" >
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-5 p-5 rounded text-center reg-form">
+                <h2 class="text-center text-white form-heading">Sign Up</h2>
+                <form action="/register" method="post" class="text-white" autocomplete="off">
+                    <span class="text-danger text-start">{{empty_err}}</span>
+                    <input type="text" name="name" class="form-control mt-4 p-2" placeholder="Name*">
+                    <input type="text" name="email" class="form-control mt-4 p-2" placeholder="Email*">
+                    <span class="text-danger text-start">{{email_err}}</span>
+                    <input type="text" name="password" class="form-control mt-4 p-2" placeholder="Password*">
+                    <span class="text-danger text-start">{{password_err}}</span>
+                    <input type="text" name="confirmpassword" class="form-control mt-4 p-2" placeholder="Confirm Password*">
+                    <input type="date" name="date_of_birth" class="form-control mt-4 p-2" placeholder="D.O.B*">
+                    <input type="text" name="number" class="form-control mt-3 p-2" placeholder="Number*">
+                    <span class="text-danger text-start">{{number_err}}</span>
+                    <label for="Gender">Gender: </label>
+                    <input type="radio" name="gender" class="mt-4 ms-3 p-2" checked> Male 
+                    <input type="radio" name="gender" class="ms-3 p-2"> Female
+                    <input type="submit" class="form-control w-50 m-auto btn-outline-success btn text-white mt-3" Value="Sign Up">
+                </form>
+                <p class="text-white pt-3">Already have Account! <a href="/login">Login here.</a></p>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</section>
+</section>
+
+{{!-- {{>footer}} --}}

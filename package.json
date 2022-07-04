@@ -1,0 +1,22 @@
+{
+  "name": "hbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon source/app.js -e js,hbs,css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "jquery": "^3.6.0",
+    "jsdom": "^20.0.0",
+    "mongoose": "^6.3.6",
+    "nodemon": "^2.0.16"
+  }
+}

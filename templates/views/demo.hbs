@@ -1,0 +1,95 @@
+<p><strong>Healthy Brand Oil</strong> is dedicated to providing the <strong>best customer service </strong>in our industry. We have distinguished ourselves from our competitors with our focus on providing <strong><em>superior products with superior service.</em></strong></p><p>
+
+<strong>Healthy Brand Oil</strong> is located in <strong>Long Island City, NY.</strong> Our <strong>fast and convenient pick up</strong> location sets us apart from our competitors. <strong>Healthy Brand Oil</strong> offers a complete line of solutions that include <strong>NON-GMO Project Verified, expeller pressed, long fry solutions, and blended oils</strong> which are always <strong><em>OU Kosher certified and Zero Grams Trans Fat per Serving.</em></strong> </p><p>
+
+<strong>Our staff</strong> is experienced in providing<strong><em> excellent customer service and support </em></strong>throughout the cooking oil industry.</p>
+
+jQuery(".header-search i").removeClass("fas fa-search")
+jQuery(".header-search i").addClass("search-icon")
+jQuery('.search-icon').prepend('<img id="theImg" src="https://kynetdesign.in/healthy-brand-oil/wp-content/uploads/2022/06/search.png"/>');
+
+
+
+
+
+//register
+app.post("/register", async (req,res)=>{
+    try{
+        const password = req.body.password;
+        const confirm_password = req.body.confirmpassword;
+        const name = req.body.name;
+        const email = req.body.email;
+        if(user_name !== '' && email !== '' && ){
+            console.log('hii');
+            if(password === confirm_password){
+                const Reg_Student = new Register({
+                    name: req.body.name,
+                    email: req.body.email,
+                    password: password,
+                    confirmpassword: confirm_password,
+                    date_of_birth: req.body.date_of_birth,
+                    number: req.body.number,
+                    gender: req.body.gender
+                })
+                const registered = await Reg_Student.save();
+                res.status(200).render('login',{
+                    success: "User Registered Successfully.. Please Login.!"
+                });
+            }else{
+                // res.send('Password did not match.')
+                res.render('register',{
+                    password_err: "Password did not match."
+                })
+            } 
+        }
+    }
+    catch(error){
+        //email validation
+        const reg_email = req.body.email;
+        const check_email = await Register.findOne({email:reg_email});
+        const eml = check_email.email;
+        if(eml){
+            res.render("register",{
+                email_err: "Email Already Registered"
+            })
+        }
+        // res.status(400).send(error);
+    }
+
+}) 
+
+<section class="product-tab">
+    <div class="product-img">
+        <img src="" alt="">
+    </div>
+    <div class="product-details">
+        <h2>Product subtitle</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eum perspiciatis repellat iste optio error, quia in molestiae omnis exercitationem cum rem eaque, ex reiciendis aut nihil! Voluptatem iure laborum eaque ea!</p>
+        <ul>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+            <li>f</li>
+        </ul>
+    </div>
+</section>
+
+ul {
+    margin: 3px 0 0 20px;
+    display: flex;
+    flex-flow: wrap;
+    flex: padding;
+    /* padding: 0px; */
+}
+li {
+    {{!-- margin-left: 27px; --}}
+    padding: 14px 27px 14px 0px;
+}
+
+div#ha-tab-content-1701 {
+    padding: 0px;
+    border: 0px;
+    border-top: 1px solid #B0B0B0;
+}

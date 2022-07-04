@@ -1,0 +1,47 @@
+{{>header}}
+{{>navbar}}
+</section>
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-white py-4">Account</h2>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+<div class="section bg-dark py-4">
+    <div class="conatiner">
+        <div class="row">
+            <div class="col-4">
+                <ul class="">
+                    <li class="border border-1 py-3 px-4 active" id="detail">User Details</li>
+                    <li class="border border-1 py-3 px-4" id="order">Orders</li>
+                    <li class="border border-1 py-3 px-4" id="history">History</li>
+                    <li class="border border-1 py-3 px-4" id="log_out"><a href="/logout" class="text-white">Logout</a></li>
+                </ul>
+            </div>
+            <div class="col-8">
+                <div class="user_details">
+                    <h6 class="text-light mt-3">Username: <span class="ms-5 text-secondary">{{current_user}}</span></h6>
+                    <h6 class="text-light mt-3">Use Email: <span class="ms-5 text-secondary">{{c_user_email}}</span></h6>
+                    <h6 class="text-light mt-3">Phone No. : <span class="ms-5 text-secondary">{{c_user_number}}</span></h6>
+                    <h6 class="text-light mt-3">User ID. : <span class="ms-5 text-secondary">{{user_id}}</span></h6>
+                </div>
+                <div class="user-orders">
+                    <h2>No orders yet..</h2>
+                </div>
+                <div class="user-history">
+                    <h2>Available Soon</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{{>footer}}

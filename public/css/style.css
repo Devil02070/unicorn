@@ -1,0 +1,111 @@
+@import url('../Cinzel/static/Cinzel-Bold.ttf');
+@import url('../Cinzel/static/Cinzel-Regular.ttf');
+@import url('../Cinzel/static/Cinzel-Medium.ttf');
+@import url('../Cinzel/static/Cinzel-SemiBold.ttf');
+@import url('../Cinzel/static/Cinzel-ExtraBold.ttf');
+@import url('../Cinzel/static/Cinzel-Black.ttf');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Cinzel-Regular;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+}
+.page-title{
+    background: #000000;
+}
+.c-pointer{
+    cursor:pointer;
+}
+/* section{
+    width: 99.3% !important;
+} */
+
+
+/* ------------------------------------------Header---------------------------------------- */
+.logo{
+    width: 55%;
+}
+.banner{
+    /* height: 84vh; */
+    font-family: Cinzel-Bold;
+}
+.reg-sec{
+    padding: 30px 0px;
+}
+.header-sec{
+    /* background-image: url('../img/Header\ Image.png'); */
+    background-image: url('../img/istockphoto-1148136785-170667a.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.menu a:hover{
+    text-decoration: underline !important;
+}
+.menu a.active{
+    text-decoration: underline !important;
+    padding-bottom: 5px;
+    color: #000000 !important;
+}
+
+/* ---------------------------------------Login-------------------------------- */
+.login-sec{
+    height: 100vh;
+}
+.login-form, .reg-form{
+    box-shadow: 0px 0px 40px -10px white;
+}
+.form-heading{
+    font-family: Cinzel-ExtraBold;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+/* ---------------------------------------Dashboard--------------------------------------- */
+.dashboard{
+    background-image: url('../img/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* overflow: auto; */
+}
+/* ------------------------------------------About------------------------------------------A*/
+.about-title {
+    position: absolute;
+    width: 100%;
+}
+.about-banner-col{
+    height: 87vh;
+}
+.about-sec{
+    background-image: url('../img/shutterstock_1930856735.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 87vh;
+}
+/* --------------------------------------------Inventory-------------------------------------------- */
+.collection:hover, .market:hover{
+    background: lightgoldenrodyellow;
+    color: black !important;
+}
+
+/* --------------------------------------------Contact-------------------------------------------- */
+.contact-sec{
+    background-image: url('../img/man-trying-futuristic-device-medium-shot.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 87vh; */
+}
+/* ---------------------------------------------Footer--------------------------------------------- */
+.footer{
+    background: black;
+    /* position: absolute;
+    bottom: 0px;
+    width: 100%; */
+}
+
+
